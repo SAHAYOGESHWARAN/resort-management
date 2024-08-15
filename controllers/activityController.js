@@ -10,6 +10,7 @@ const getAllActivities = async (req, res) => {
     }
 };
 
+
 // Get a single activity by ID
 const getActivityById = async (req, res) => {
     try {
@@ -22,6 +23,7 @@ const getActivityById = async (req, res) => {
         res.status(500).json({ message: error.message });
     }
 };
+
 
 // Add a new activity (admin only)
 const addActivity = async (req, res) => {
@@ -55,4 +57,8 @@ const bookActivity = async (req, res) => {
     }
 };
 
-module.exports = { getAllActivities, getActivityById, addActivity, bookActivity };
+module.exports = { 
+    getAllActivities,
+     getActivityById,
+      addActivity, 
+      bookActivity };
