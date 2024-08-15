@@ -10,4 +10,6 @@ const getUserBookings = async (req, res) => {
     // logic to get user bookings
 };
 
-module.exports = { createBooking, getUserBookings };
+module.exports = {
+     createBooking,
+      getUserBookings };
