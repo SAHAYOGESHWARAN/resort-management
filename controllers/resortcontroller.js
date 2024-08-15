@@ -15,4 +15,7 @@ const addResort = async (req, res) => {
     // logic to add new resort
 };
 
-module.exports = { getAllResorts, getResortById, addResort };
+module.exports = { 
+    getAllResorts,
+     getResortById,
+      addResort };
