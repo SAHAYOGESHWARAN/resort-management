@@ -15,4 +15,7 @@ const getUserProfile = async (req, res) => {
     // profile fetching logic
 };
 
-module.exports = { registerUser, loginUser, getUserProfile };
+module.exports = { 
+    registerUser, 
+    loginUser,
+     getUserProfile };
