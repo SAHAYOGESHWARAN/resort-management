@@ -12,6 +12,7 @@ router.get('/activity/:id', getActivityById);
 // Add a new activity (admin only)
 router.post('/', protect, addActivity);
 
+
 // Book an activity
 router.post('/book/:id', protect, bookActivity);
 
