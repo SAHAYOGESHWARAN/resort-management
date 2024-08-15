@@ -1,21 +1,28 @@
+/* General Body Styling */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background: url('https://example.com/your-background.gif') no-repeat center center fixed; /* Add your GIF URL here */
+    background-size: cover;
+    color: #333;
 }
 
+/* Header Styling */
 header {
-    background-color: #333;
+    background-color: rgba(51, 51, 51, 0.8); /* Slight transparency for better visibility */
     color: #fff;
-    padding: 10px 0;
+    padding: 20px 0;
     text-align: center;
+    animation: fadeInDown 1s ease-in-out; /* Header animation */
 }
 
 header h1 {
     margin: 0;
+    font-size: 3rem;
 }
 
+/* Navigation Styling */
 nav ul {
     list-style: none;
     padding: 0;
@@ -23,24 +30,105 @@ nav ul {
 
 nav ul li {
     display: inline;
-    margin: 0 15px;
+    margin: 0 20px;
+    animation: bounceIn 1.5s ease-in-out; /* Navigation animation */
 }
 
 nav ul li a {
     color: #fff;
     text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
 }
 
+nav ul li a:hover {
+    color: #f4f4f4;
+    text-shadow: 0px 0px 5px #fff; /* AI-inspired glow effect */
+}
+
+/* Main Content Styling */
 main {
-    padding: 20px;
+    padding: 40px;
+    background: rgba(255, 255, 255, 0.85); /* Slight transparency for the main content */
+    animation: slideInLeft 1s ease-in-out; /* Main content animation */
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
 }
 
+/* Footer Styling */
 footer {
-    background-color: #333;
+    background-color: rgba(51, 51, 51, 0.8);
     color: #fff;
     text-align: center;
-    padding: 10px 0;
+    padding: 15px 0;
     position: fixed;
     width: 100%;
     bottom: 0;
+    animation: fadeInUp 1s ease-in-out; /* Footer animation */
+}
+
+/* Keyframe Animations */
+
+/* Fade In from the Top */
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Slide In from the Left */
+@keyframes slideInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Bounce In Effect */
+@keyframes bounceIn {
+    0%, 20%, 40%, 60%, 80%, 100% {
+        animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+    }
+    0% {
+        opacity: 0;
+        transform: scale3d(0.3, 0.3, 0.3);
+    }
+    20% {
+        transform: scale3d(1.1, 1.1, 1.1);
+    }
+    40% {
+        transform: scale3d(0.9, 0.9, 0.9);
+    }
+    60% {
+        opacity: 1;
+        transform: scale3d(1.03, 1.03, 1.03);
+    }
+    80% {
+        transform: scale3d(0.97, 0.97, 0.97);
+    }
+    100% {
+        opacity: 1;
+        transform: scale3d(1, 1, 1);
+    }
+}
+
+/* Fade In from the Bottom */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
