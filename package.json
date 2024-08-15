@@ -7,13 +7,14 @@
     "dev": "nodemon server.js"
   },
   "dependencies": {
-    "author":"saha",
     "bcryptjs": "^2.4.3",
     "cors": "^2.8.5",
     "dotenv": "^10.0.0",
+    "ejs": "^3.1.10",
     "express": "^4.19.2",
     "jsonwebtoken": "^8.5.1",
-    "mongoose": "^5.13.22"
+    "mongoose": "^5.13.22",
+    "path": "^0.12.7"
   },
   "devDependencies": {
     "nodemon": "^2.0.7"
